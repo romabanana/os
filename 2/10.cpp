@@ -6,9 +6,18 @@
 int main(int argc, char *argv[]) {
 	pid_t pid;
 	int i;
+	*/	
+		fork bifurca en dos procesos, uno padre y otro hijo.
+		en el primero pid = pid del hijo, en el hijo pid = 0.
+
+		Ambos ejecutan el codigo inmediatamente a continuacion
+		de manera independiente.
 	
+		
+		*/
 	pid = fork();
-	
+	pid = fork();
+
 	if(pid==0){
 		for(i=0;i<10;i++){
 			printf("Hijo: %d\n", i);
